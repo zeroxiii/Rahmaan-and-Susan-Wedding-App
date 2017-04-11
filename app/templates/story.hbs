@@ -1,3 +1,175 @@
 <div class="ui piled segment">
-  TEST STORY
+  <div class="ui raised segment">
+    <h2 class="ui header blue ribbon label">
+      <i class="newspaper icon"></i>
+      <div class="content">
+        Our Story
+        <div class="sub header">
+          The Long Journey We've Had
+        </div>
+      </div>
+    </h2>
+    <p></p>
+    <p>
+      This is where we will put the contents of our story!
+    </p>
+    <p></p>
+  </div>
+  <div class="ui raised segment">
+    <h2 class="ui header red ribbon label">
+      <i class="group icon"></i>
+      <div class="content">
+        The Wedding Party
+        <div class="sub header">
+          The Grand Army Behind Our Event
+        </div>
+      </div>
+    </h2>
+    <p></p>
+    <div class="ui two column grid">
+      <div class="centered column">
+        <h3 class="ui center aligned block header">Bridesmaids</h3>
+        {{#ui-shape class="people" as |execute|}}
+          <div class="two ui buttons">
+            <div class="ui labeled icon button" onclick={{action execute 'flip left'}}>
+              <i class="left chevron icon"></i>
+              Back
+            </div>
+            <div class="ui right labeled icon button" onclick={{action execute 'flip right'}}>
+              Forward
+              <i class="right chevron icon"></i>
+            </div>
+          </div>
+
+          <div class="sides">
+            <div class="active side">
+              <div class="ui fluid card">
+                <div class="image">
+                  <img src="http://semantic-ui.com/images/avatar/large/steve.jpg">
+                </div>
+                <div class="content">
+                  <div class="header">Steve Jobes</div>
+                  <div class="meta">
+                    <span>Acquaintances</span>
+                  </div>
+                  <div class="description">
+                    Steve Jobes is a fictional character designed to resemble someone familiar to readers.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="side">
+              <div class="ui fluid card">
+                <div class="image">
+                  <img src="http://semantic-ui.com/images/avatar/large/stevie.jpg">
+                </div>
+                <div class="content">
+                  <a class="header">Stevie Feliciano</a>
+                  <div class="meta">
+                    <span>Acquaintances</span>
+                  </div>
+                  <div class="description">
+                    Stevie Feliciano is a library scientist living in New York City. She likes to spend her time reading, running, and writing.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {{/ui-shape}}
+      </div>
+      <div class="column">
+        <h3 class="ui center aligned block header">Groomsmen</h3>
+        {{#ui-shape class="people" as |execute|}}
+          <div class="two ui buttons">
+            <div class="ui labeled icon button" onclick={{action execute 'flip left'}}>
+              <i class="left chevron icon"></i>
+              Back
+            </div>
+            <div class="ui right labeled icon button" onclick={{action execute 'flip right'}}>
+              Forward
+              <i class="right chevron icon"></i>
+            </div>
+          </div>
+
+          <div class="sides">
+            <div class="active side">
+              <div class="ui fluid card">
+                <div class="image">
+                  <img src="http://semantic-ui.com/images/avatar/large/steve.jpg">
+                </div>
+                <div class="content">
+                  <div class="header">Steve Jobes</div>
+                  <div class="meta">
+                    <span>Acquaintances</span>
+                  </div>
+                  <div class="description">
+                    Steve Jobes is a fictional character designed to resemble someone familiar to readers.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="side">
+              <div class="ui fluid card">
+                <div class="image">
+                  <img src="http://semantic-ui.com/images/avatar/large/stevie.jpg">
+                </div>
+                <div class="content">
+                  <a class="header">Stevie Feliciano</a>
+                  <div class="meta">
+                    <span>Acquaintances</span>
+                  </div>
+                  <div class="description">
+                    Stevie Feliciano is a library scientist living in New York City. She likes to spend her time reading, running, and writing.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {{/ui-shape}}
+      </div>
+    </div>
+    <p></p>
+  </div>
+  <div class="ui raised segment">
+    <h2 class="ui header blue ribbon label">
+      <i class="image icon"></i>
+      <div class="content">
+        Gallery
+        <div class="sub header">
+          The Moments We've Capture
+        </div>
+      </div>
+    </h2>
+    <div class="ui segment">
+      <h3 class="ui block header">
+        <div class="content">
+          Engagment Session
+          <div class="sub header">
+            A Lovely Trip to a Waterfall
+          </div>
+        </div>
+      </h3>
+      {{#ui-shape class="gallery" as |execute|}}
+        <div class="two ui buttons">
+          <div class="ui labeled icon button" onclick={{action execute 'flip left'}}>
+            <i class="left chevron icon"></i>
+            Back
+          </div>
+          <div class="ui right labeled icon button" onclick={{action execute 'flip right'}}>
+            Forward
+            <i class="right chevron icon"></i>
+          </div>
+        </div>
+
+        <div class="sides">
+          <div class="active side">
+            <img class="ui fluid bordered rounded centered image" src="/assets/images/gallery1.jpg" />
+          </div>
+          <div class="side">
+            <img class="ui fluid bordered rounded centered image" src="/assets/images/gallery2.jpg" />
+          </div>
+        </div>
+      {{/ui-shape}}
+    </div>
+  </div>
 </div>
