@@ -5,12 +5,15 @@
       Rahmaan and Susan Wedding
     </h1>
     <div class="ui six stackable item inverted menu">
-        <a class="item">Home</a>
-        <a class="item">Our Story</a>
-        <a class="item">Details</a>
-        <a class="item">Travel</a>
-        <a class="item">Registry</a>
-        <a class="item">Contact</a>
+        {{link-to "Home" "index" class="item"}}
+        {{link-to "Our Story" "story" class="item"}}
+        {{link-to "Details" "details" class="item"}}
+        {{link-to "Travel" "travel" class="item"}}
+        {{link-to "Registry" "registry" class="item"}}
+        {{link-to "Contact" "contact" class="item"}}
     </div>
+  </div>
+  <div class="ui container">
+    {{outlet}}
   </div>
 </div>
