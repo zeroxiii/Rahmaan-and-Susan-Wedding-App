@@ -1,15 +1,26 @@
-<div class="ui main container">
-  <div class="ui basic segment">
-    <div class="ui six stackable item inverted blue menu">
-        {{link-to "Home" "index" class="item"}}
-        {{link-to "Our Story" "story" class="item"}}
-        {{link-to "Details" "details" class="item"}}
-        {{link-to "Travel" "travel" class="item"}}
-        {{link-to "Registry" "registry" class="item"}}
-        {{link-to "Contact" "contact" class="item"}}
+<div class="ui pushable component context view-content">
+  {{#ui-sidebar  class="inverted compact menu left inline vertical" context=".component.context" id="sub-sidebar"}}
+    {{link-to "Home" "index" class="item"}}
+    {{link-to "Our Story" "story" class="item"}}
+    {{link-to "Details" "details" class="item"}}
+    {{link-to "Travel" "travel" class="item"}}
+    {{link-to "Registry" "registry" class="item"}}
+    {{link-to "Contact" "contact" class="item"}}
+  {{/ui-sidebar}}
+
+  <div class="pusher">
+    {{page-header}}
+    <div class="ui vertical basic segment">
+      <div class="ui container">
+        {{outlet}}
+      </div>
     </div>
-  </div>
-  <div class="ui container">
-    {{outlet}}
+    <div class="ui vertical segment">
+      <div class="ui text container">
+        <div class="ui left tiny blue header">
+          © 2017 by Rahmaan & Susan
+        </div>
+      </div>
+    </div>
   </div>
 </div>
