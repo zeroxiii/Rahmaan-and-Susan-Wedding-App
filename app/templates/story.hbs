@@ -16,46 +16,4 @@
     <p></p>
   </div>
   {{story/wedding-party}}
-  <div class="ui raised segment">
-    <h2 class="ui header blue ribbon label">
-      <i class="camera retro icon"></i>
-      <div class="content">
-        Gallery
-        <div class="sub header">
-          The Moments We've Capture
-        </div>
-      </div>
-    </h2>
-    <div class="ui segment">
-      <h3 class="ui block header">
-        <div class="content">
-          Engagment Session
-          <div class="sub header">
-            A Lovely Trip to a Waterfall
-          </div>
-        </div>
-      </h3>
-      {{#ui-shape class="gallery" as |execute|}}
-        <div class="two ui buttons">
-          <div class="ui labeled icon button" onclick={{action execute 'flip left'}}>
-            <i class="left chevron icon"></i>
-            Back
-          </div>
-          <div class="ui right labeled icon button" onclick={{action execute 'flip right'}}>
-            Forward
-            <i class="right chevron icon"></i>
-          </div>
-        </div>
-
-        <div class="sides">
-          <div class="active side">
-            <img class="ui fluid bordered rounded centered image" src="/assets/images/gallery1.jpg" />
-          </div>
-          <div class="side">
-            <img class="ui fluid bordered rounded centered image" src="/assets/images/gallery2.jpg" />
-          </div>
-        </div>
-      {{/ui-shape}}
-    </div>
-  </div>
 </div>

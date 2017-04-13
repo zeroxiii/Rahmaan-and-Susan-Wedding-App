@@ -10,9 +10,9 @@ Router.map(function() {
   this.route('home');
   this.route('story');
   this.route('details');
-  this.route('travel');
   this.route('registry');
   this.route('contact');
+  this.route('gallery');
 });
 
 export default Router;

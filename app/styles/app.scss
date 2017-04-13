@@ -33,6 +33,7 @@ $orange: #734F2F;
 .ui.piled.segment {
   background-color: $parchment;
   margin-bottom: 50px !important;
+  margin-top: 15px !important;
 }
 
 .ui.segment {
@@ -104,8 +105,8 @@ $orange: #734F2F;
   }
 }
 
-.ember-application .no-ember {
-  display: none;
+.thumb {
+  height: 150px;
 }
 
 .footer {

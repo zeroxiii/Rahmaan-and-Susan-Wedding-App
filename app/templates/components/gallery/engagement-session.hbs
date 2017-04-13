@@ -1,0 +1,18 @@
+<div class="ui piled segment">
+  <div class="ui raised segment">
+    <h2 class="ui header blue ribbon label">
+      <i class="camera retro icon"></i>
+      <div class="content">
+        Gallery
+        <div class="sub header">
+          The Moments We've Capture
+        </div>
+      </div>
+    </h2>
+    <div class="ui grid">
+      {{#photo-swipe items=myGallery as |img|}}
+        <img class="thumb" src={{img.src}} alt={{img.title}}>
+      {{/photo-swipe}}
+    </div>
+  </div>
+</div>
