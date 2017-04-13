@@ -2,7 +2,17 @@ $theme-blue: #0f4c7c;
 $theme-red: #9c003e;
 $ivory: #F7E2C5;
 $parchment: #E5BD7F;
-$orange: #EC904F;
+$orange: #734F2F;
+
+@font-face {
+    font-family: 'ElfaBrush';
+    src: url('/assets/fonts/ElfaBrush/ElfaBrush_gdi.eot');
+    src:
+         url('/assets/fonts/ElfaBrush/ElfaBrush_gdi.woff') format('woff'),
+         url('/assets/fonts/ElfaBrush/ElfaBrush_gdi.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .site-nav {
   background-color: $theme-blue !important;
@@ -76,8 +86,8 @@ $orange: #EC904F;
 
 .home-image {
   position: relative;
-
-  h2 {
+  margin-bottom: 50px !important;
+  .home-message {
     position: absolute;
     top: 0;
     left: 0;
@@ -86,10 +96,11 @@ $orange: #EC904F;
     color: $ivory !important;
     margin: 0 !important;
     background: rgba(0, 0, 0, 0.5);
-
-    .horizontal.divider {
-      color: $ivory !important;
-    }
+    font-family: 'ElfaBrush', sans-serif !important;
+    letter-spacing: 1px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
