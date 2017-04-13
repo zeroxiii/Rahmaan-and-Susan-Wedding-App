@@ -9,9 +9,9 @@
         </div>
       </div>
     </h2>
-    <div class="ui grid">
-      {{#photo-swipe items=myGallery as |img|}}
-        <img class="thumb" src={{img.src}} alt={{img.title}}>
+    <div class="ui basic segment">
+      {{#photo-swipe class="ui center aligned grid images" items=myGallery as |img|}}
+        <img class="ui small image" src={{img.src}} alt={{img.title}}>
       {{/photo-swipe}}
     </div>
   </div>

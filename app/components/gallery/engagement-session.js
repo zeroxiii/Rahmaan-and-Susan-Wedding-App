@@ -14,6 +14,24 @@ export default Ember.Component.extend({
       w: 600,
       h: 404,
       title: 'whoa',
-    }
+    },
+    {
+      src: "/assets/images/gallery1.jpg",
+      w: 600,
+      h: 404,
+      title: 'whoa',
+    },
+    {
+      src: "/assets/images/gallery1.jpg",
+      w: 600,
+      h: 404,
+      title: 'whoa',
+    },
+    {
+      src: "/assets/images/gallery1.jpg",
+      w: 600,
+      h: 404,
+      title: 'whoa',
+    },
   ]
 });
