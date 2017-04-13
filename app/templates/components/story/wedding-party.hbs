@@ -1,0 +1,52 @@
+<h2 class="ui header blue ribbon label">
+  <i class="group icon"></i>
+  <div class="content">
+    The Wedding Party
+    <div class="sub header">
+      Our Grand Army
+    </div>
+  </div>
+</h2>
+<p></p>
+<div class="ui stackable grid">
+  {{#each weddingParty as |group|}}
+    <div class="four wide centered column">
+      <div class="one column grid">
+        <h3 class="ui center aligned block header column">{{group.name}}</h3>
+        {{#ui-shape class="people column" as |execute|}}
+          <div class="two ui buttons">
+            <div class="ui icon button" onclick={{action execute 'flip left'}}>
+              <i class="left chevron icon"></i>
+            </div>
+            <div class="ui icon button" onclick={{action execute 'flip right'}}>
+              <i class="right chevron icon"></i>
+            </div>
+          </div>
+
+          <div class="sides">
+            {{#each group.party as |member index|}}
+              <div class="side {{if (eq index 0) "active"}}">
+                <div class="ui fluid card">
+                  <div class="image">
+                    <img src={{member.url}}>
+                  </div>
+                  <div class="content">
+                    <div class="header">
+                      {{member.name}}
+                    </div>
+                    <div class="meta">
+                      <span>{{member.position}}</span>
+                    </div>
+                    <div class="description">
+                      {{member.description}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {{/each}}
+          </div>
+        {{/ui-shape}}
+      </div>
+    </div>
+  {{/each}}
+</div>
