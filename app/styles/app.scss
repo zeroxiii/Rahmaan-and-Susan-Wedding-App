@@ -1,0 +1,97 @@
+$theme-blue: #0f4c7c;
+$theme-red: #9c003e;
+$ivory: #F7E2C5;
+$parchment: #E5BD7F;
+$orange: #EC904F;
+
+.site-nav {
+  background-color: $theme-blue !important;
+}
+
+.ui.piled.segments:before, .ui.piled.segment:before {
+  background-color: $ivory;
+}
+
+.ui.piled.segments:after, .ui.piled.segment:after {
+  background-color: $orange;
+}
+
+.ui.piled.segment {
+  background-color: $parchment;
+}
+
+.ui.segment {
+  background-color: $ivory;
+}
+
+.header.ribbon.label {
+   background-color: $theme-blue !important;
+   color: $ivory !important;
+
+   .sub.header {
+     color: $parchment !important;
+   }
+}
+
+.header.ribbon.label:after {
+  color: $theme-blue !important;
+}
+
+.view-content {
+  // background-color: #9c003e;
+  background-color: $theme-red;
+  background-image: url('/assets/images/diagmonds.png');
+}
+
+.view-content {
+  height: 100vh;
+}
+
+.hidden.menu {
+  display: none;
+}
+
+.toc.menu {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .ui .fixed .menu {
+    display: none !important;
+  }
+
+  .site-nav.menu {
+    display: none;
+  }
+
+  .toc.menu {
+    display: block;
+  }
+}
+
+.home-image {
+  position: relative;
+
+  h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: $ivory !important;
+    margin: 0 !important;
+    background: rgba(0, 0, 0, 0.5);
+
+    .horizontal.divider {
+      color: $ivory !important;
+    }
+  }
+}
+
+.ember-application .no-ember {
+  display: none;
+}
+
+.copyright {
+  color: $ivory !important;
+}

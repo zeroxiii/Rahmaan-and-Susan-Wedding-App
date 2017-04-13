@@ -1,10 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend(Ember.Evented, {
-
+  classNames: ['page-header'],
+  
   actions: {
     toggle: function() {
-      $('.ui.sidebar').sidebar('toggle');
+      Ember.$('.ui.sidebar').sidebar('toggle');
     }
   }
 });
