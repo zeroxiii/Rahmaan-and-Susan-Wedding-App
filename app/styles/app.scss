@@ -100,7 +100,8 @@ $orange: #EC904F;
 .footer {
   position: absolute !important;
   bottom: 0;
-  left: 5%;
+  width: 100%;
+  text-align: center;
 
   .copyright {
     color: $ivory !important;
