@@ -6,9 +6,10 @@ export default PhotoSwipe.extend({
   // RELATIVE POSITIONING!!!
   _getBounds: function(i) {
     var img      = this.$('img').get(i),
+        pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
         position = this.$(img).offset(),
         width    = this.$(img).width();
-    return {x: position.left, y: position.top, w: width};
+    return {x: position.left, y: position.top + pageYScroll, w: width};
   },
 
 });
