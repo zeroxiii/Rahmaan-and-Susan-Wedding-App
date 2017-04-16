@@ -6,12 +6,14 @@ export default Ember.Component.extend({
   weddingParty: Ember.computed(function() {
     let result = [
       {
-        name: "Bride's Side",
-        party: this.get('brideParty'),
+        name: "Groom's Side",
+        headerImg: "/assets/images/story/rahmaan_icon.jpg",
+        party: this.get('groomParty'),
       },
       {
-        name: "Groom's Side",
-        party: this.get('groomParty'),
+        name: "Bride's Side",
+        headerImg: "/assets/images/story/susan_icon.jpg",
+        party: this.get('brideParty'),
       }
     ];
 
