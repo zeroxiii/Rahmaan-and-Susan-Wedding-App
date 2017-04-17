@@ -97,12 +97,6 @@ export default Ember.Component.extend({
         h: this.get('photoHeight'),
         title: '',
       },
-      {
-        src: "/assets/images/gallery/engagement_gallery_16.jpg",
-        w: this.get('photoWidth'),
-        h: this.get('photoHeight'),
-        title: '',
-      },
     ];
 
     return result;
