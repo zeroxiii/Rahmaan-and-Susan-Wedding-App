@@ -6,11 +6,11 @@ export default Ember.Component.extend({
   classNames: ['ui', 'vertical', 'center', 'aligned', 'basic', 'segment', 'home-image'],
   clock: Ember.inject.service(),
   'wedding-clock': Ember.inject.service(),
-  weddingDate: moment("2017-10-13 19:30 EST", "YYYY-MM-DD HH:mm Z"),
+  weddingDate: moment("2017-10-13T23:30:00Z"),
 
   timeTillWedding: Ember.computed('wedding-clock.date', 'weddingDate', function() {
     console.log(this.get('clock'));
-    let currentDate = this.get('wedding-clock.date');
+    let currentDate = moment(this.get('wedding-clock.date'));
     let weddingDate = this.get('weddingDate');
 
     let truncRegEx = /(^\d*)\.?\d*/;
