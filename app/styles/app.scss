@@ -88,15 +88,52 @@ $orange: #734F2F;
 .home-image {
   position: relative;
   margin-bottom: 50px !important;
-  .home-message {
+  width: 100%;
+
+  .home-days-countdown {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 40%;
+    left: 10%;
+    width: 40%;
+    font-size: 6vmin !important;
+    color: $ivory !important;
+    font-family: 'ElfaBrush', sans-serif !important;
+    letter-spacing: 1px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home-hours-countdown {
+    position: absolute;
+    top: 60%;
+    left: 66%;
+    width: 25%;
+    font-size: 4.5vmin !important;
+    color: $ivory !important;
+    font-family: 'ElfaBrush', sans-serif !important;
+    text-align: left;
+    letter-spacing: 1px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home-minutes-countdown {
+    position: absolute;
+    top: 81%;
+    left: 33.5%;
+    width: 25%;
+    font-size: 3.5vmin !important;
+    color: $ivory !important;
+    font-family: 'ElfaBrush', sans-serif !important;
+    letter-spacing: 1px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home-message {
     height: 100%;
     width: 100%;
     color: $ivory !important;
-    margin: 0 !important;
-    background: rgba(0, 0, 0, 0.5);
     font-family: 'ElfaBrush', sans-serif !important;
     letter-spacing: 1px;
     display: flex !important;
