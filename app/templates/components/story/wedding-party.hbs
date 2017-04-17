@@ -17,8 +17,8 @@
       <div class="ui doubling cards row">
         {{#each group.party as |member index|}}
           <div class="ui centered card">
-            <div class="image">
-              <img src={{member.url}}>
+            <div class="ui image">
+              {{lazy-image url=member.url}}
             </div>
             <div class="content">
               <div class="header">
