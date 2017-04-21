@@ -22,7 +22,7 @@ export default Ember.Component.extend({
 
   groomParty: [
     {
-      name: "Chris Ghiathi",
+      name: "Christopher Ghiathi",
       url: "/assets/images/party/chris_card.jpg",
       position: "Best Man",
       description: "Chris is an ok guy."
@@ -46,7 +46,7 @@ export default Ember.Component.extend({
       description: "Ryan Krepps is an ok guy."
     },
     {
-      name: "Dan Rosmus",
+      name: "Daniel Rosmus",
       url: "/assets/images/party/dan_card.jpg",
       position: "Groomsman",
       description: "Dan Rosmus is an ok guy."
@@ -79,8 +79,8 @@ export default Ember.Component.extend({
       description: "Raissa is a cool kid."
     },
     {
-      name: "Gwendelyn Queen",
-      url: "http://semantic-ui.com/images/avatar/large/stevie.jpg",
+      name: "Gwendolyn Queen",
+      url: "/assets/images/party/gwen_card.jpg",
       position: "Bridesmaid",
       description: "Gwendelyn Queen is a cool kid."
     },
@@ -92,19 +92,19 @@ export default Ember.Component.extend({
     },
     {
       name: "Shardaya Weems",
-      url: "http://semantic-ui.com/images/avatar/large/stevie.jpg",
+      url: "/assets/images/party/shardaya_card.jpg",
       position: "Bridesmaid",
       description: "Shardaya Weems is a cool kid."
     },
     {
       name: "Kimberly Wong",
-      url: "http://semantic-ui.com/images/avatar/large/stevie.jpg",
+      url: "/assets/images/party/kimberly_card.jpg",
       position: "Bridesmaid",
       description: "Kimberly Wong is a cool kid."
     },
     {
       name: "Lauren Yutko",
-      url: "http://semantic-ui.com/images/avatar/large/stevie.jpg",
+      url: "/assets/images/party/lauren_card.jpg",
       position: "Bridesmaid",
       description: "Lauren Yutko is a cool kid."
     },

@@ -16,7 +16,7 @@
       </div>
       <div class="ui doubling cards row">
         {{#each group.party as |member index|}}
-          <div class="ui centered card">
+          <div class="ui centered card {{if (eq group.party groomParty) 'blue' 'red'}} ">
             <div class="ui image">
               {{lazy-image url=member.url}}
             </div>
@@ -27,9 +27,9 @@
               <div class="meta">
                 <span>{{member.position}}</span>
               </div>
-              <div class="description">
+              {{!-- <div class="description">
                 {{member.description}}
-              </div>
+              </div> --}}
             </div>
           </div>
         {{/each}}
