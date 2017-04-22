@@ -111,7 +111,7 @@ export default Ember.Component.extend({
     {
       name: "Jonathan Kuo",
       url: "/assets/images/party/kuo_card.jpg",
-      position: "Bridesdude",
+      position: "Bridesbro",
       description: "Jonathan Kuo is an ok guy."
     },
     {
